@@ -15,9 +15,10 @@
 
 ## Использование
 
-1. Запустите программу:
+1. Клонируйте репозиторий и запустите программу:
 
 ```powershell
+git clone git@github.com:hermanguilliman/IPEYE-Parser.git
 .\ipeye-parser.exe
 ```
 
