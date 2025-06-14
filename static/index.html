@@ -242,6 +242,12 @@
             paginationBottom.innerHTML = buttonsHTML;
         }
 
+        function decodeHtml(html) {
+            const txt = document.createElement('textarea');
+            txt.innerHTML = html;
+            return txt.value;
+        }
+
         function createCameraCard(camera) {
             const container = document.getElementById('container');
             
@@ -253,7 +259,7 @@
             
             const nameElem = document.createElement('div');
             nameElem.className = 'camera-name';
-            nameElem.textContent = camera.name || 'Unnamed Camera';
+            nameElem.textContent = decodeHtml(camera.name) || 'Unnamed Camera';
 
             const idElem = document.createElement('div');
             idElem.className = 'camera-meta';

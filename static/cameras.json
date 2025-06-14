@@ -255,7 +255,7 @@
     "id_user": "22524",
     "devcode": "39fa938d3eee4a9784540782040596d5",
     "name": "cloud_157096",
-    "stream_url": "http://sr-171-25-232-28.ipeye.ru/api/v1/stream/39fa938d3eee4a9784540782040596d5/hls/index.m3u8"
+    "stream_url": "http://sr-171-25-235-106.ipeye.ru/api/v1/stream/39fa938d3eee4a9784540782040596d5/hls/index.m3u8"
   },
   {
     "id_user": "23393",
@@ -272,7 +272,8 @@
   {
     "id_user": "11942",
     "devcode": "f4f3608212dd46b6b9964076bd91bef6",
-    "name": "Коктебель, ул. Юнге"
+    "name": "Коктебель, ул. Юнге",
+    "stream_url": "http://sr-171-25-233-75.ipeye.ru/api/v1/stream/f4f3608212dd46b6b9964076bd91bef6/hls/index.m3u8"
   },
   {
     "id_user": "25213",
@@ -284,13 +285,13 @@
     "id_user": "25213",
     "devcode": "4ecfa014ac1544df8a0092a870418051",
     "name": "3-6a камера2",
-    "stream_url": "http://sr-171-25-232-135.ipeye.ru/api/v1/stream/4ecfa014ac1544df8a0092a870418051/hls/index.m3u8"
+    "stream_url": "http://sr-171-25-232-230.ipeye.ru/api/v1/stream/4ecfa014ac1544df8a0092a870418051/hls/index.m3u8"
   },
   {
     "id_user": "25213",
     "devcode": "6f48221433e44d64a2c8d8c5bbf741b2",
     "name": "3-6a камера1",
-    "stream_url": "http://sr-171-25-232-135.ipeye.ru/api/v1/stream/6f48221433e44d64a2c8d8c5bbf741b2/hls/index.m3u8"
+    "stream_url": "http://sr-171-25-232-230.ipeye.ru/api/v1/stream/6f48221433e44d64a2c8d8c5bbf741b2/hls/index.m3u8"
   },
   {
     "id_user": "6860",
@@ -314,7 +315,7 @@
     "id_user": "45450",
     "devcode": "6340c8e48fcd44bf8559ea04f46b6a60",
     "name": "Спальная",
-    "stream_url": "http://sr-171-25-232-135.ipeye.ru/api/v1/stream/6340c8e48fcd44bf8559ea04f46b6a60/hls/index.m3u8"
+    "stream_url": "http://sr-171-25-232-230.ipeye.ru/api/v1/stream/6340c8e48fcd44bf8559ea04f46b6a60/hls/index.m3u8"
   },
   {
     "id_user": "4399",
@@ -440,7 +441,7 @@
     "id_user": "15644",
     "devcode": "72931f22342b4cc39d1707a486172560",
     "name": "ЖК Достояние к2",
-    "stream_url": "http://sr-171-25-232-135.ipeye.ru/api/v1/stream/72931f22342b4cc39d1707a486172560/hls/index.m3u8"
+    "stream_url": "http://sr-171-25-232-230.ipeye.ru/api/v1/stream/72931f22342b4cc39d1707a486172560/hls/index.m3u8"
   },
   {
     "id_user": "24369",
@@ -470,7 +471,7 @@
     "id_user": "59489",
     "devcode": "60e4c00f3f304de5b1d7da26b389a5ca",
     "name": "Гора Белая (Турникеты Кресельного подъемника)",
-    "stream_url": "http://sr-171-25-232-149.ipeye.ru/api/v1/stream/60e4c00f3f304de5b1d7da26b389a5ca/hls/index.m3u8"
+    "stream_url": "http://sr-171-25-232-170.ipeye.ru/api/v1/stream/60e4c00f3f304de5b1d7da26b389a5ca/hls/index.m3u8"
   },
   {
     "id_user": "63873",
@@ -710,7 +711,7 @@
     "id_user": "81844",
     "devcode": "1bd471112f9c44f0926442640c8f5763",
     "name": "Хабаровская 12/23  СКЛАД",
-    "stream_url": "http://sr-171-25-232-28.ipeye.ru/api/v1/stream/1bd471112f9c44f0926442640c8f5763/hls/index.m3u8"
+    "stream_url": "http://sr-171-25-235-106.ipeye.ru/api/v1/stream/1bd471112f9c44f0926442640c8f5763/hls/index.m3u8"
   },
   {
     "id_user": "83547",
@@ -788,7 +789,7 @@
     "id_user": "23396",
     "devcode": "052a1b580abf43f48ca2fce5995ad34f",
     "name": "cloud_74047",
-    "stream_url": "http://sr-171-25-232-7.ipeye.ru/api/v1/stream/052a1b580abf43f48ca2fce5995ad34f/hls/index.m3u8"
+    "stream_url": "http://sr-171-25-233-91.ipeye.ru/api/v1/stream/052a1b580abf43f48ca2fce5995ad34f/hls/index.m3u8"
   },
   {
     "id_user": "57329",
@@ -1040,7 +1041,7 @@
     "id_user": "112907",
     "devcode": "703f1ffca5854b6fb096d45868d95e95",
     "name": "Клиентская зона",
-    "stream_url": "http://sr-171-25-232-159.ipeye.ru/api/v1/stream/703f1ffca5854b6fb096d45868d95e95/hls/index.m3u8"
+    "stream_url": "http://sr-171-25-234-57.ipeye.ru/api/v1/stream/703f1ffca5854b6fb096d45868d95e95/hls/index.m3u8"
   },
   {
     "id_user": "111220",
@@ -1082,7 +1083,7 @@
     "id_user": "117207",
     "devcode": "0e90f5ed03744854a6dc1f9a218ddcc1",
     "name": "OZON Улица Штурманская",
-    "stream_url": "http://sr-171-25-232-230.ipeye.ru/api/v1/stream/0e90f5ed03744854a6dc1f9a218ddcc1/hls/index.m3u8"
+    "stream_url": "http://sr-171-25-234-57.ipeye.ru/api/v1/stream/0e90f5ed03744854a6dc1f9a218ddcc1/hls/index.m3u8"
   },
   {
     "id_user": "117207",
@@ -1094,7 +1095,7 @@
     "id_user": "117590",
     "devcode": "23087d6d840e4d179de78f8d7f86fbca",
     "name": "Пузакова_46",
-    "stream_url": "http://sr-171-25-232-230.ipeye.ru/api/v1/stream/23087d6d840e4d179de78f8d7f86fbca/hls/index.m3u8"
+    "stream_url": "http://sr-171-25-234-57.ipeye.ru/api/v1/stream/23087d6d840e4d179de78f8d7f86fbca/hls/index.m3u8"
   },
   {
     "id_user": "15681",
@@ -1412,6 +1413,6 @@
     "id_user": "141748",
     "devcode": "c8820142d9f14b72a442946fba96e15b",
     "name": "Пункт выдачи р.п.Жадовка Гагарина 7",
-    "stream_url": "http://sr-171-25-232-205.ipeye.ru/api/v1/stream/c8820142d9f14b72a442946fba96e15b/hls/index.m3u8"
+    "stream_url": "http://sr-171-25-234-62.ipeye.ru/api/v1/stream/c8820142d9f14b72a442946fba96e15b/hls/index.m3u8"
   }
 ]
