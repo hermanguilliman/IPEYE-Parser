@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background: #1a1a1a;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.camera-card {
+    background: #2a2a2a;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+}
+
+.camera-card:hover {
+    transform: translateY(-2px);
+}
+
+.video-container {
+    position: relative;
+    padding-top: 56.25%;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: #000;
+}
+
+.camera-info {
+    padding: 15px;
+    color: white;
+    text-align: left;
+}
+
+.camera-name {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #4CAF50;
+    font-size: 1.1em;
+}
+
+.camera-meta {
+    font-size: 0.9em;
+    margin: 4px 0;
+    color: #ccc;
+}
+
+.camera-status {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.status-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #4CAF50;
+    animation: pulse 1.5s infinite;
+}
+
+.status-indicator.offline {
+    background: #ff4444;
+    animation: none;
+}
+
+.camera-devcode {
+    word-break: break-all;
+    font-family: monospace;
+    font-size: 0.8em;
+    opacity: 0.8;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 20px 0;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.pagination button {
+    background: #4CAF50;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.pagination button.active {
+    background: #2d682f;
+    cursor: default;
+}
+
+.pagination button:disabled {
+    background: #666;
+    cursor: not-allowed;
+}
+
+.page-size-selector {
+    margin: 10px 0;
+    text-align: center;
+    color: white;
+}
+
+.page-size-selector select {
+    margin-left: 10px;
+    padding: 5px;
+    background: #333;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 4px;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
+
+.error {
+    color: #ff4444;
+    padding: 20px;
+    text-align: center;
+}
+
+.loading {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
