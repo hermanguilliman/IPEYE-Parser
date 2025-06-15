@@ -1,16 +1,26 @@
+<!-- Объявление типа документа как HTML5 -->
 <!DOCTYPE html>
+<!-- Установка языка документа на английский -->
 <html lang="en">
 <head>
+    <!-- Указание кодировки символов UTF-8 -->
     <meta charset="UTF-8">
+    <!-- Настройка адаптивного отображения для разных устройств -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Заголовок страницы -->
     <title>IP Camera Viewer</title>
+    <!-- Подключение библиотеки HLS.js для поддержки потокового видео -->
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <!-- Подключение файла стилей -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Главный заголовок страницы -->
     <h1>IP Camera Viewer</h1>
+    <!-- Контейнер для выбора количества камер на странице -->
     <div class="page-size-selector">
-        Cameras per page:
+        Камер на странице:
+        <!-- Выпадающее меню для выбора количества камер -->
         <select id="pageSize">
             <option value="6">6</option>
             <option value="12" selected>12</option>
@@ -19,12 +29,16 @@
         </select>
     </div>
     
+    <!-- Верхняя панель пагинации -->
     <div class="pagination" id="paginationTop"></div>
     
+    <!-- Контейнер для отображения карточек камер -->
     <div class="container" id="container"></div>
     
+    <!-- Нижняя панель пагинации -->
     <div class="pagination" id="paginationBottom"></div>
 
+    <!-- Подключение JavaScript-файла для функциональности -->
     <script src="script.js"></script>
 </body>
 </html>

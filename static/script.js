@@ -1,28 +1,32 @@
+// Объект конфигурации для констант и настроек
 const CONFIG = {
-    DEFAULT_CAMERAS_PER_PAGE: 12,
+    DEFAULT_CAMERAS_PER_PAGE: 12, // Количество камер на странице по умолчанию
     SELECTORS: {
-        CONTAINER: '#container',
-        PAGE_SIZE: '#pageSize',
-        PAGINATION_TOP: '#paginationTop',
-        PAGINATION_BOTTOM: '#paginationBottom'
+        CONTAINER: '#container', // Селектор контейнера для карточек камер
+        PAGE_SIZE: '#pageSize', // Селектор выпадающего меню количества камер
+        PAGINATION_TOP: '#paginationTop', // Селектор верхней пагинации
+        PAGINATION_BOTTOM: '#paginationBottom' // Селектор нижней пагинации
     },
-    RETRY_ATTEMPTS: 3,
-    RETRY_DELAY_MS: 1000
+    RETRY_ATTEMPTS: 3, // Количество попыток загрузки потока
+    RETRY_DELAY_MS: 1000 // Задержка между попытками в миллисекундах
 };
 
+// Элементы DOM для быстрого доступа
 const DOM = {
-    container: document.querySelector(CONFIG.SELECTORS.CONTAINER),
-    pageSize: document.querySelector(CONFIG.SELECTORS.PAGE_SIZE),
-    paginationTop: document.querySelector(CONFIG.SELECTORS.PAGINATION_TOP),
-    paginationBottom: document.querySelector(CONFIG.SELECTORS.PAGINATION_BOTTOM)
+    container: document.querySelector(CONFIG.SELECTORS.CONTAINER), // Контейнер карточек камер
+    pageSize: document.querySelector(CONFIG.SELECTORS.PAGE_SIZE), // Выпадающее меню количества камер
+    paginationTop: document.querySelector(CONFIG.SELECTORS.PAGINATION_TOP), // Верхняя пагинация
+    paginationBottom: document.querySelector(CONFIG.SELECTORS.PAGINATION_BOTTOM) // Нижняя пагинация
 };
 
+// Состояние приложения
 let state = {
-    allCameras: [],
-    currentPage: 1,
-    camerasPerPage: CONFIG.DEFAULT_CAMERAS_PER_PAGE
+    allCameras: [], // Массив всех данных о камерах
+    currentPage: 1, // Текущая страница
+    camerasPerPage: CONFIG.DEFAULT_CAMERAS_PER_PAGE // Количество камер на странице
 };
 
+// Функция для ограничения частоты выполнения функции (debounce)
 function debounce(func, wait) {
     let timeout;
     return function (...args) {
@@ -31,6 +35,7 @@ function debounce(func, wait) {
     };
 }
 
+// Отображает сообщение об ошибке в DOM и логирует его в консоль
 function handleError(message, element = document.body) {
     const errorDiv = document.createElement('div');
     errorDiv.className = 'error';
@@ -39,72 +44,78 @@ function handleError(message, element = document.body) {
     console.error(message);
 }
 
+// Переключает состояние загрузки, обновляя интерфейс
 function setLoading(isLoading) {
-    DOM.container.innerHTML = isLoading ? '<div class="loading">Loading cameras...</div>' : '';
+    DOM.container.innerHTML = isLoading ? '<div class="loading">Загрузка камер...</div>' : '';
     DOM.pageSize.disabled = isLoading;
     DOM.paginationTop.style.pointerEvents = isLoading ? 'none' : 'auto';
     DOM.paginationBottom.style.pointerEvents = isLoading ? 'none' : 'auto';
 }
 
+// Декодирует HTML-сущности в строке
 function decodeHtml(html) {
     const txt = document.createElement('textarea');
     txt.innerHTML = html;
     return txt.value;
 }
 
+// Проверяет объект камеры на наличие обязательных полей
 function validateCamera(camera) {
     const requiredFields = ['id_user', 'devcode', 'stream_url'];
     const isValid = requiredFields.every(field => camera[field] !== undefined && camera[field] !== null);
     if (!isValid) {
-        console.warn('Invalid camera:', camera);
+        console.warn('Некорректная камера:', camera);
     }
     return isValid;
 }
 
+// Пытается загрузить видеопоток с повторными попытками при сбое
 async function loadStreamWithRetry(hls, video, url, updateStatus) {
     for (let i = 0; i < CONFIG.RETRY_ATTEMPTS; i++) {
         try {
-            console.log(`Attempting to load stream: ${url} (Attempt ${i + 1})`);
+            console.log(`Попытка загрузки потока: ${url} (Попытка ${i + 1})`);
             hls.loadSource(url);
             hls.attachMedia(video);
             await new Promise((resolve, reject) => {
                 hls.on(Hls.Events.MANIFEST_PARSED, () => {
-                    console.log(`Stream loaded successfully: ${url}`);
+                    console.log(`Поток успешно загружен: ${url}`);
                     video.play().catch(error => {
-                        console.error(`Playback error for ${url}:`, error);
-                        updateStatus('Playback Blocked', true);
+                        console.error(`Ошибка воспроизведения для ${url}:`, error);
+                        updateStatus('Воспроизведение заблокировано', true);
                     });
-                    updateStatus('Live');
+                    updateStatus('Онлайн');
                     resolve();
                 });
                 hls.on(Hls.Events.ERROR, (event, data) => {
-                    console.error(`HLS error for ${url}:`, data);
+                    console.error(`Ошибка HLS для ${url}:`, data);
                     if (data.fatal) reject(data);
                 });
             });
             return;
         } catch (error) {
-            console.error(`Stream load attempt ${i + 1} failed for ${url}:`, error);
+            console.error(`Попытка загрузки ${i + 1} не удалась для ${url}:`, error);
             if (i < CONFIG.RETRY_ATTEMPTS - 1) {
                 await new Promise(res => setTimeout(res, CONFIG.RETRY_DELAY_MS * Math.pow(2, i)));
             } else {
-                updateStatus(`Stream Error: ${error.type || 'Unknown'}`, true);
+                updateStatus(`Ошибка потока: ${error.type || 'Неизвестно'}`, true);
             }
         }
     }
 }
 
+// Создает карточку камеры с видеоплеером и метаданными
 function createCameraCard(camera) {
-    console.log('Creating camera card for:', camera);
+    console.log('Создание карточки для камеры:', camera);
     const card = document.createElement('div');
     card.className = 'camera-card';
     
+    // Секция информации о камере
     const info = document.createElement('div');
     info.className = 'camera-info';
     
     const nameElem = document.createElement('div');
     nameElem.className = 'camera-name';
-    nameElem.textContent = decodeHtml(camera.name) || 'Unnamed Camera';
+    nameElem.textContent = decodeHtml(camera.name) || 'Безымянная камера';
 
     const idElem = document.createElement('div');
     idElem.className = 'camera-meta';
@@ -112,13 +123,13 @@ function createCameraCard(camera) {
 
     const devcodeElem = document.createElement('div');
     devcodeElem.className = 'camera-meta camera-devcode';
-    devcodeElem.textContent = `Code: ${camera.devcode}`;
+    devcodeElem.textContent = `Код: ${camera.devcode}`;
 
     const statusElem = document.createElement('div');
     statusElem.className = 'camera-status';
     statusElem.innerHTML = `
         <span class="status-indicator"></span>
-        <span class="status-text">Connecting...</span>
+        <span class="status-text">Подключение...</span>
     `;
 
     info.appendChild(nameElem);
@@ -126,6 +137,7 @@ function createCameraCard(camera) {
     info.appendChild(devcodeElem);
     info.appendChild(statusElem);
 
+    // Контейнер и плеер для видео
     const videoContainer = document.createElement('div');
     videoContainer.className = 'video-container';
     
@@ -133,20 +145,22 @@ function createCameraCard(camera) {
     video.controls = true;
     video.muted = true;
 
+    // Обновляет индикатор и текст статуса камеры
     const updateStatus = (status, isError = false) => {
         statusElem.querySelector('.status-indicator').className = 
             `status-indicator${isError ? ' offline' : ''}`;
         statusElem.querySelector('.status-text').textContent = status;
         card.style.backgroundColor = isError ? '#3a1a1a' : '#2a2a2a';
-        console.log(`Status updated for ${camera.id_user}: ${status}${isError ? ' (Error)' : ''}`);
+        console.log(`Статус обновлен для ${camera.id_user}: ${status}${isError ? ' (Ошибка)' : ''}`);
     };
 
     let hls = null;
     let isDestroyed = false;
 
+    // Очистка ресурсов видео и HLS
     const cleanup = () => {
         if (hls && !isDestroyed) {
-            console.log(`Cleaning up HLS for ${camera.id_user}`);
+            console.log(`Очистка HLS для ${camera.id_user}`);
             hls.destroy();
             isDestroyed = true;
         }
@@ -155,24 +169,25 @@ function createCameraCard(camera) {
         video.remove();
     };
 
+    // Настройка потокового видео через HLS или нативную поддержку
     if (Hls.isSupported()) {
         hls = new Hls();
         loadStreamWithRetry(hls, video, camera.stream_url, updateStatus);
     } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-        console.log(`Using native HLS for ${camera.stream_url}`);
+        console.log(`Использование нативного HLS для ${camera.stream_url}`);
         video.src = camera.stream_url;
-        video.addEventListener('loadeddata', () => updateStatus('Live'));
+        video.addEventListener('loadeddata', () => updateStatus('Онлайн'));
         video.addEventListener('error', (error) => {
-            console.error(`Native HLS error for ${camera.stream_url}:`, error);
-            updateStatus('Offline', true);
+            console.error(`Ошибка нативного HLS для ${camera.stream_url}:`, error);
+            updateStatus('Оффлайн', true);
         });
     } else {
-        console.warn(`Unsupported format for ${camera.stream_url}`);
-        updateStatus('Unsupported Format', true);
+        console.warn(`Неподдерживаемый формат для ${camera.stream_url}`);
+        updateStatus('Неподдерживаемый формат', true);
     }
 
-    video.addEventListener('play', () => updateStatus('Live'));
-    video.addEventListener('waiting', () => updateStatus('Buffering...'));
+    video.addEventListener('play', () => updateStatus('Онлайн'));
+    video.addEventListener('waiting', () => updateStatus('Буферизация...'));
 
     videoContainer.appendChild(video);
     card.appendChild(videoContainer);
@@ -180,33 +195,37 @@ function createCameraCard(camera) {
     
     card.addEventListener('remove', cleanup);
     DOM.container.appendChild(card);
-    console.log(`Camera card added to container for ${camera.id_user}`);
+    console.log(`Карточка камеры добавлена в контейнер для ${camera.id_user}`);
 }
 
+// Дебаунс-функция для обновления отображаемых камер
 const debouncedUpdateCameras = debounce(function updateCameras() {
-    console.log(`Updating cameras for page ${state.currentPage}, ${state.camerasPerPage} per page`);
+    console.log(`Обновление камер для страницы ${state.currentPage}, ${state.camerasPerPage} на странице`);
     window.scrollTo(0, 0);
     DOM.container.innerHTML = '';
     
+    // Вычисление среза камер для отображения
     const start = (state.currentPage - 1) * state.camerasPerPage;
     const end = start + state.camerasPerPage;
     const camerasToShow = state.allCameras.slice(start, end);
-    console.log(`Cameras to show: ${camerasToShow.length}`);
+    console.log(`Камер для показа: ${camerasToShow.length}`);
 
+    // Создание карточек для валидных камер
     camerasToShow.forEach(camera => {
         if (validateCamera(camera)) {
             createCameraCard(camera);
         } else {
-            handleError(`Invalid camera data: ${JSON.stringify(camera)}`, DOM.container);
+            handleError(`Некорректные данные камеры: ${JSON.stringify(camera)}`, DOM.container);
         }
     });
 
     updatePaginationControls();
 }, 100);
 
+// Обновляет кнопки пагинации на основе общего числа страниц
 function updatePaginationControls() {
     const totalPages = Math.ceil(state.allCameras.length / state.camerasPerPage);
-    console.log(`Total pages: ${totalPages}`);
+    console.log(`Всего страниц: ${totalPages}`);
     
     const buttonsHTML = Array.from({ length: totalPages }, (_, index) => {
         const pageNumber = index + 1;
@@ -218,11 +237,12 @@ function updatePaginationControls() {
     DOM.paginationBottom.innerHTML = buttonsHTML;
 }
 
+// Настройка обработчиков событий для пагинации и изменения количества камер
 function setupPagination() {
     DOM.pageSize.addEventListener('change', (e) => {
         state.camerasPerPage = parseInt(e.target.value);
         state.currentPage = 1;
-        console.log(`Page size changed to ${state.camerasPerPage}`);
+        console.log(`Размер страницы изменен на ${state.camerasPerPage}`);
         debouncedUpdateCameras();
     });
 
@@ -230,30 +250,32 @@ function setupPagination() {
         pagination.addEventListener('click', (e) => {
             if (e.target.tagName === 'BUTTON' && e.target.dataset.page) {
                 state.currentPage = parseInt(e.target.dataset.page);
-                console.log(`Page changed to ${state.currentPage}`);
+                console.log(`Страница изменена на ${state.currentPage}`);
                 debouncedUpdateCameras();
             }
         });
     });
 }
 
+// Загружает данные о камерах из JSON-файла и инициализирует интерфейс
 async function loadCameras() {
-    console.log('Loading cameras...');
+    console.log('Загрузка камер...');
     setLoading(true);
     try {
         const response = await fetch('cameras.json');
-        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+        if (!response.ok) throw new Error(`Ошибка HTTP! Статус: ${response.status}`);
         state.allCameras = await response.json();
-        console.log(`Loaded ${state.allCameras.length} cameras`);
+        console.log(`Загружено ${state.allCameras.length} камер`);
         DOM.pageSize.value = state.camerasPerPage;
         setupPagination();
         debouncedUpdateCameras();
     } catch (error) {
-        console.error('Error loading cameras:', error);
-        handleError(`Failed to load camera data: ${error.message}`);
+        console.error('Ошибка загрузки камер:', error);
+        handleError(`Не удалось загрузить данные камер: ${error.message}`);
     } finally {
         setLoading(false);
     }
 }
 
+// Инициализация приложения
 loadCameras();
