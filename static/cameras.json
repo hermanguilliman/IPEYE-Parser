@@ -12,18 +12,6 @@
     "stream_url": "http://sr-171-25-232-10.ipeye.ru/api/v1/stream/z7gIAQIfdyjEjA1CEE2U8SRjiBuhqx/hls/index.m3u8"
   },
   {
-    "id_user": "1545",
-    "devcode": "2Cjk2OEBPQcFu3i8MbEeRmG7D1rkk4",
-    "name": "вид 1",
-    "stream_url": "http://sr-171-25-233-69.ipeye.ru/api/v1/stream/2Cjk2OEBPQcFu3i8MbEeRmG7D1rkk4/hls/index.m3u8"
-  },
-  {
-    "id_user": "1545",
-    "devcode": "m9fvQchEaMSlXnPJit8rTt0Dd6q5nD",
-    "name": "вид 2",
-    "stream_url": "http://sr-171-25-232-13.ipeye.ru/api/v1/stream/m9fvQchEaMSlXnPJit8rTt0Dd6q5nD/hls/index.m3u8"
-  },
-  {
     "id_user": "5566",
     "devcode": "mm0a6HyxM8ECUG4Ahaj7vK4AfImclo",
     "name": "Nevesomost",
@@ -42,22 +30,16 @@
     "stream_url": "http://sr-171-25-232-10.ipeye.ru/api/v1/stream/dyopdE47dJ9H8nAz5EEgxplD9GIJCR/hls/index.m3u8"
   },
   {
-    "id_user": "5913",
-    "devcode": "ikL1vteDxdY5s3SrkZ5YJmxOmIFyvw",
-    "name": "Камера PTZ",
-    "stream_url": "http://sr-171-25-232-13.ipeye.ru/api/v1/stream/ikL1vteDxdY5s3SrkZ5YJmxOmIFyvw/hls/index.m3u8"
-  },
-  {
     "id_user": "2005",
     "devcode": "CKRT8DDyzuxQgHgaLaxVPUlULy76no",
     "name": "офис улица",
     "stream_url": "http://sr-171-25-232-10.ipeye.ru/api/v1/stream/CKRT8DDyzuxQgHgaLaxVPUlULy76no/hls/index.m3u8"
   },
   {
-    "id_user": "8919",
-    "devcode": "tOB1od4ZgLZJm7Mm9lDSqhFTTly65Q",
-    "name": "ЖК \u0026quot;Интер 2\u0026quot;, КС Альфа",
-    "stream_url": "http://sr-171-25-232-146.ipeye.ru/api/v1/stream/tOB1od4ZgLZJm7Mm9lDSqhFTTly65Q/hls/index.m3u8"
+    "id_user": "6763",
+    "devcode": "xUaWxapt1cOmPf2cVfvwX05Zsollke",
+    "name": "foc1",
+    "stream_url": "http://sr-171-25-232-146.ipeye.ru/api/v1/stream/xUaWxapt1cOmPf2cVfvwX05Zsollke/hls/index.m3u8"
   },
   {
     "id_user": "3635",
@@ -66,22 +48,10 @@
     "stream_url": "http://sr-171-25-232-13.ipeye.ru/api/v1/stream/LcBaoUceaL6kBt2QsiTSfotTySOpIr/hls/index.m3u8"
   },
   {
-    "id_user": "9922",
-    "devcode": "60bebadce22741099ae01d4f5583edf0",
-    "name": "Камера1",
-    "stream_url": "http://sr-171-25-232-147.ipeye.ru/api/v1/stream/60bebadce22741099ae01d4f5583edf0/hls/index.m3u8"
-  },
-  {
     "id_user": "10652",
     "devcode": "eKe3QYlQC95CcgWpLZOpTTTpKKpLIA",
     "name": "Yoosee",
     "stream_url": "http://sr-171-25-232-15.ipeye.ru/api/v1/stream/eKe3QYlQC95CcgWpLZOpTTTpKKpLIA/hls/index.m3u8"
-  },
-  {
-    "id_user": "13610",
-    "devcode": "a626e17757a1466b9f035f4779be1a4a",
-    "name": "жилой дом 7 по ул. Прокатной",
-    "stream_url": "http://sr-171-25-232-54.ipeye.ru/api/v1/stream/a626e17757a1466b9f035f4779be1a4a/hls/index.m3u8"
   },
   {
     "id_user": "8919",
@@ -204,22 +174,10 @@
     "stream_url": "http://sr-171-25-232-46.ipeye.ru/api/v1/stream/mdrv0dlEUEZjZ1RWpyRM2LpC2m3wn6/hls/index.m3u8"
   },
   {
-    "id_user": "18314",
-    "devcode": "b9899489ebca4910bc234d53d40f0d99",
-    "name": "Помойка",
-    "stream_url": "http://sr-171-25-233-78.ipeye.ru/api/v1/stream/b9899489ebca4910bc234d53d40f0d99/hls/index.m3u8"
-  },
-  {
     "id_user": "18850",
     "devcode": "b8262f903251491d8191343ef5265e5e",
     "name": "Камера 1",
     "stream_url": "http://sr-171-25-232-45.ipeye.ru/api/v1/stream/b8262f903251491d8191343ef5265e5e/hls/index.m3u8"
-  },
-  {
-    "id_user": "13654",
-    "devcode": "ba0611b26e4d4915b54b12c793f7e672",
-    "name": "Офис",
-    "stream_url": "http://sr-171-25-232-181.ipeye.ru/api/v1/stream/ba0611b26e4d4915b54b12c793f7e672/hls/index.m3u8"
   },
   {
     "id_user": "8944",
@@ -232,6 +190,12 @@
     "devcode": "Pxdfe1G64cQtZFHrP24aIiXqzlBFUO",
     "name": "cloud_152914",
     "stream_url": "http://sr-171-25-232-147.ipeye.ru/api/v1/stream/Pxdfe1G64cQtZFHrP24aIiXqzlBFUO/hls/index.m3u8"
+  },
+  {
+    "id_user": "10320",
+    "devcode": "a7a4b58d7f414d4ba2808fcd33eed926",
+    "name": "Федюково",
+    "stream_url": "http://sr-171-25-232-13.ipeye.ru/api/v1/stream/a7a4b58d7f414d4ba2808fcd33eed926/hls/index.m3u8"
   },
   {
     "id_user": "18366",
@@ -268,12 +232,6 @@
     "devcode": "739c932b2f684fb0b608a299cf80472f",
     "name": "Участок",
     "stream_url": "http://sr-171-25-232-175.ipeye.ru/api/v1/stream/739c932b2f684fb0b608a299cf80472f/hls/index.m3u8"
-  },
-  {
-    "id_user": "11942",
-    "devcode": "f4f3608212dd46b6b9964076bd91bef6",
-    "name": "Коктебель, ул. Юнге",
-    "stream_url": "http://sr-171-25-233-75.ipeye.ru/api/v1/stream/f4f3608212dd46b6b9964076bd91bef6/hls/index.m3u8"
   },
   {
     "id_user": "25213",
@@ -366,16 +324,22 @@
     "stream_url": "http://sr-171-25-233-93.ipeye.ru/api/v1/stream/338481c40ab84e7985c9afed94d251b8/hls/index.m3u8"
   },
   {
-    "id_user": "50847",
-    "devcode": "b586d92f0697486c9a0fcc003ccb4ba3",
-    "name": "Камера2",
-    "stream_url": "http://sr-171-25-232-152.ipeye.ru/api/v1/stream/b586d92f0697486c9a0fcc003ccb4ba3/hls/index.m3u8"
+    "id_user": "52720",
+    "devcode": "255bc416bc3d4f4e99806d79357d46f1",
+    "name": "Парковка д.171, Выезд на МШ",
+    "stream_url": "http://sr-171-25-234-50.ipeye.ru/api/v1/stream/255bc416bc3d4f4e99806d79357d46f1/hls/index.m3u8"
   },
   {
     "id_user": "52164",
     "devcode": "2a7139d8e38f425382d92712863acc66",
     "name": "Камера3",
     "stream_url": "http://sr-171-25-234-50.ipeye.ru/api/v1/stream/2a7139d8e38f425382d92712863acc66/hls/index.m3u8"
+  },
+  {
+    "id_user": "52896",
+    "devcode": "6ee7d6ebc1fc402eacdbb1d319a4472a",
+    "name": "Capital Avenue 2",
+    "stream_url": "http://sr-171-25-232-8.ipeye.ru/api/v1/stream/6ee7d6ebc1fc402eacdbb1d319a4472a/hls/index.m3u8"
   },
   {
     "id_user": "53636",
@@ -412,36 +376,6 @@
     "devcode": "fe3f2db266814a17a70ecee1f89860ab",
     "name": "Вход",
     "stream_url": "http://sr-171-25-232-146.ipeye.ru/api/v1/stream/fe3f2db266814a17a70ecee1f89860ab/hls/index.m3u8"
-  },
-  {
-    "id_user": "54176",
-    "devcode": "315a87bbfa034aff9c4af76d58f83cd7",
-    "name": "Касса",
-    "stream_url": "http://sr-171-25-232-58.ipeye.ru/api/v1/stream/315a87bbfa034aff9c4af76d58f83cd7/hls/index.m3u8"
-  },
-  {
-    "id_user": "56196",
-    "devcode": "30ddf6572a0d4c2ca49994cbc5fd64a0",
-    "name": "cloud_179725",
-    "stream_url": "http://sr-171-25-233-93.ipeye.ru/api/v1/stream/30ddf6572a0d4c2ca49994cbc5fd64a0/hls/index.m3u8"
-  },
-  {
-    "id_user": "56571",
-    "devcode": "507f62696c824fbb834879664feb89ad",
-    "name": "Сверхлёгкая авиация Юца. Парапланы, дельтапланы",
-    "stream_url": "http://sr-171-25-232-167.ipeye.ru/api/v1/stream/507f62696c824fbb834879664feb89ad/hls/index.m3u8"
-  },
-  {
-    "id_user": "48522",
-    "devcode": "2cb009442bb64a9980224ce71456ff9a",
-    "name": "cloud_37151",
-    "stream_url": "http://sr-171-25-233-89.ipeye.ru/api/v1/stream/2cb009442bb64a9980224ce71456ff9a/hls/index.m3u8"
-  },
-  {
-    "id_user": "15644",
-    "devcode": "72931f22342b4cc39d1707a486172560",
-    "name": "ЖК Достояние к2",
-    "stream_url": "http://sr-171-25-232-230.ipeye.ru/api/v1/stream/72931f22342b4cc39d1707a486172560/hls/index.m3u8"
   },
   {
     "id_user": "24369",
@@ -499,12 +433,6 @@
   },
   {
     "id_user": "63873",
-    "devcode": "0b5d4a2221174856a739364f2d10cccd",
-    "name": "Салават Цветы от Венеры Бекетова 10 кам2",
-    "stream_url": "http://sr-171-25-232-229.ipeye.ru/api/v1/stream/0b5d4a2221174856a739364f2d10cccd/hls/index.m3u8"
-  },
-  {
-    "id_user": "63873",
     "devcode": "9e4cbd75863e469eac96b3ed2dfdcd67",
     "name": "Салават Цветы от Венеры Первомайская 41 кам 4",
     "stream_url": "http://sr-171-25-232-54.ipeye.ru/api/v1/stream/9e4cbd75863e469eac96b3ed2dfdcd67/hls/index.m3u8"
@@ -520,18 +448,6 @@
     "devcode": "1aa86ef2b9734d2eb56080d7fd0ed49a",
     "name": "Салават Цветы от Венеры Первомайская 41 кам2",
     "stream_url": "http://sr-171-25-232-239.ipeye.ru/api/v1/stream/1aa86ef2b9734d2eb56080d7fd0ed49a/hls/index.m3u8"
-  },
-  {
-    "id_user": "22447",
-    "devcode": "dd23b7892cf942dd8bd7d265b8a9c67f",
-    "name": "ZBK_21 () VREG01_1 AC01",
-    "stream_url": "http://sr-171-25-232-54.ipeye.ru/api/v1/stream/dd23b7892cf942dd8bd7d265b8a9c67f/hls/index.m3u8"
-  },
-  {
-    "id_user": "22447",
-    "devcode": "ac892929e1654b92a83a12093ff9bdaa",
-    "name": "ZBK_22 () VREG01_2 AC02",
-    "stream_url": "http://sr-171-25-232-54.ipeye.ru/api/v1/stream/ac892929e1654b92a83a12093ff9bdaa/hls/index.m3u8"
   },
   {
     "id_user": "63888",
@@ -594,12 +510,6 @@
     "stream_url": "http://sr-171-25-234-50.ipeye.ru/api/v1/stream/24c7749de48b494ca68e96773891b8a7/hls/index.m3u8"
   },
   {
-    "id_user": "28591",
-    "devcode": "4h5u4I3hgUa4KZe5dbp9800V7ZyRc9",
-    "name": "klen-snt-vyezd",
-    "stream_url": "http://sr-171-25-232-46.ipeye.ru/api/v1/stream/4h5u4I3hgUa4KZe5dbp9800V7ZyRc9/hls/index.m3u8"
-  },
-  {
     "id_user": "63873",
     "devcode": "ac9b80c788664c17aa204760fac34136",
     "name": "Салават Цветы от Венеры Островского 73 Кам 2",
@@ -642,12 +552,6 @@
     "stream_url": "http://sr-171-25-232-20.ipeye.ru/api/v1/stream/124212e598b5493dbc1798aee9395103/hls/index.m3u8"
   },
   {
-    "id_user": "54635",
-    "devcode": "72cc95d3472e47f1b685d85b593f1d41",
-    "name": "Камера1",
-    "stream_url": "http://sr-171-25-232-4.ipeye.ru/api/v1/stream/72cc95d3472e47f1b685d85b593f1d41/hls/index.m3u8"
-  },
-  {
     "id_user": "50920",
     "devcode": "2e9320175c6a48939c6fc1762f2d6316",
     "name": "Пухтолова Гора",
@@ -658,6 +562,18 @@
     "devcode": "c737fb937a884d629d867a0332ee0d68",
     "name": "Lebedev",
     "stream_url": "http://sr-171-25-232-184.ipeye.ru/api/v1/stream/c737fb937a884d629d867a0332ee0d68/hls/index.m3u8"
+  },
+  {
+    "id_user": "73715",
+    "devcode": "3223ef1687a34dc086d02d469eae332d",
+    "name": "Родина, 7 корпус 10 (въезд)",
+    "stream_url": "http://sr-171-25-232-146.ipeye.ru/api/v1/stream/3223ef1687a34dc086d02d469eae332d/hls/index.m3u8"
+  },
+  {
+    "id_user": "73715",
+    "devcode": "5457664b9ac3455d8f5343b7cf7068dc",
+    "name": "Родина, 7 корпус 10 (площадка)",
+    "stream_url": "http://sr-171-25-232-146.ipeye.ru/api/v1/stream/5457664b9ac3455d8f5343b7cf7068dc/hls/index.m3u8"
   },
   {
     "id_user": "6853",
@@ -789,7 +705,7 @@
     "id_user": "23396",
     "devcode": "052a1b580abf43f48ca2fce5995ad34f",
     "name": "cloud_74047",
-    "stream_url": "http://sr-171-25-233-91.ipeye.ru/api/v1/stream/052a1b580abf43f48ca2fce5995ad34f/hls/index.m3u8"
+    "stream_url": "http://sr-171-25-235-210.ipeye.ru/api/v1/stream/052a1b580abf43f48ca2fce5995ad34f/hls/index.m3u8"
   },
   {
     "id_user": "57329",
@@ -858,10 +774,10 @@
     "stream_url": "http://sr-171-25-232-184.ipeye.ru/api/v1/stream/60105b6b93b448d3b8bff6852a2de22b/hls/index.m3u8"
   },
   {
-    "id_user": "98322",
-    "devcode": "e30337cd3d764808b2147894b152b84d",
-    "name": "Офис",
-    "stream_url": "http://sr-171-25-232-184.ipeye.ru/api/v1/stream/e30337cd3d764808b2147894b152b84d/hls/index.m3u8"
+    "id_user": "8944",
+    "devcode": "1f259ff702b2478ba7cedbf1f6ccfd79",
+    "name": "Пушкин, Колпинское шоссе - Галицкая",
+    "stream_url": "http://sr-171-25-232-20.ipeye.ru/api/v1/stream/1f259ff702b2478ba7cedbf1f6ccfd79/hls/index.m3u8"
   },
   {
     "id_user": "73272",
@@ -874,30 +790,6 @@
     "devcode": "4bf197a0757b46b8be884085d33e643a",
     "name": "camera_700023",
     "stream_url": "http://sr-171-25-232-130.ipeye.ru/api/v1/stream/4bf197a0757b46b8be884085d33e643a/hls/index.m3u8"
-  },
-  {
-    "id_user": "99962",
-    "devcode": "b45ef007d8264a1facd755e42d6cd601",
-    "name": "г. Орск ул. Жукова 1_1",
-    "stream_url": "http://sr-171-25-232-161.ipeye.ru/api/v1/stream/b45ef007d8264a1facd755e42d6cd601/hls/index.m3u8"
-  },
-  {
-    "id_user": "99962",
-    "devcode": "6f42bb2498f140d890a2955c7fb7629a",
-    "name": "г. Орск ул. Жукова 1_2",
-    "stream_url": "http://sr-171-25-232-161.ipeye.ru/api/v1/stream/6f42bb2498f140d890a2955c7fb7629a/hls/index.m3u8"
-  },
-  {
-    "id_user": "99962",
-    "devcode": "f7f52db68570439287d4b1354b3a3565",
-    "name": "г. Орск ул. Жукова 1_3",
-    "stream_url": "http://sr-171-25-232-144.ipeye.ru/api/v1/stream/f7f52db68570439287d4b1354b3a3565/hls/index.m3u8"
-  },
-  {
-    "id_user": "99962",
-    "devcode": "f380fcb20be34832b5f6b0754342af53",
-    "name": "г. Орск ул. Жукова 1_4",
-    "stream_url": "http://sr-171-25-232-184.ipeye.ru/api/v1/stream/f380fcb20be34832b5f6b0754342af53/hls/index.m3u8"
   },
   {
     "id_user": "99962",
@@ -924,28 +816,10 @@
     "stream_url": "http://sr-171-25-232-161.ipeye.ru/api/v1/stream/e7f19cb7a4c647cd94705a7c3b10068c/hls/index.m3u8"
   },
   {
-    "id_user": "101340",
-    "devcode": "e6c14eaa86a4459e8303a168423f4421",
-    "name": "Kuragino",
-    "stream_url": "http://sr-171-25-232-145.ipeye.ru/api/v1/stream/e6c14eaa86a4459e8303a168423f4421/hls/index.m3u8"
-  },
-  {
     "id_user": "101883",
     "devcode": "9db79f204b374bc6817540b17b5deabb",
     "name": "shaurma muhor",
     "stream_url": "http://sr-171-25-232-46.ipeye.ru/api/v1/stream/9db79f204b374bc6817540b17b5deabb/hls/index.m3u8"
-  },
-  {
-    "id_user": "102095",
-    "devcode": "4526a01ba4134034a5bcdff242d4a33d",
-    "name": "Алтайская 76",
-    "stream_url": "http://sr-171-25-232-46.ipeye.ru/api/v1/stream/4526a01ba4134034a5bcdff242d4a33d/hls/index.m3u8"
-  },
-  {
-    "id_user": "104452",
-    "devcode": "75693cc0eea44b1c97f2507b62ac9db2",
-    "name": "Камера1",
-    "stream_url": "http://sr-171-25-232-18.ipeye.ru/api/v1/stream/75693cc0eea44b1c97f2507b62ac9db2/hls/index.m3u8"
   },
   {
     "id_user": "9865",
@@ -1008,34 +882,22 @@
     "stream_url": "http://sr-171-25-232-12.ipeye.ru/api/v1/stream/0e874642599849118a788cee872846f9/hls/index.m3u8"
   },
   {
-    "id_user": "110749",
-    "devcode": "ec7f0ece120e4a23bc67f70b2b3ad6b0",
-    "name": "Цех - камера 1",
-    "stream_url": "http://sr-171-25-232-155.ipeye.ru/api/v1/stream/ec7f0ece120e4a23bc67f70b2b3ad6b0/hls/index.m3u8"
-  },
-  {
     "id_user": "108180",
     "devcode": "70c5de4e9be84c5d9d62b81cd94e35b2",
     "name": "OZ-Gogol118_cam2",
     "stream_url": "http://sr-171-25-232-167.ipeye.ru/api/v1/stream/70c5de4e9be84c5d9d62b81cd94e35b2/hls/index.m3u8"
   },
   {
-    "id_user": "111789",
-    "devcode": "a3960864fff6450fbf0658d760610192",
-    "name": "Камера Морпорт Анадырь",
-    "stream_url": "http://sr-171-25-232-167.ipeye.ru/api/v1/stream/a3960864fff6450fbf0658d760610192/hls/index.m3u8"
+    "id_user": "110852",
+    "devcode": "01a84d22ecf348d38168fa000dfd234d",
+    "name": "Участок",
+    "stream_url": "http://sr-171-25-232-12.ipeye.ru/api/v1/stream/01a84d22ecf348d38168fa000dfd234d/hls/index.m3u8"
   },
   {
     "id_user": "91533",
     "devcode": "43696d864cda4624b5b94a53676b14c9",
     "name": "Корнейчука 16",
     "stream_url": "http://sr-171-25-232-167.ipeye.ru/api/v1/stream/43696d864cda4624b5b94a53676b14c9/hls/index.m3u8"
-  },
-  {
-    "id_user": "69373",
-    "devcode": "0eb5c26b53d64ab7bdb1b571c0539dfb",
-    "name": "Вилиса Лациса 38к1, кв.220",
-    "stream_url": "http://sr-171-25-233-82.ipeye.ru/api/v1/stream/0eb5c26b53d64ab7bdb1b571c0539dfb/hls/index.m3u8"
   },
   {
     "id_user": "112907",
@@ -1056,12 +918,6 @@
     "stream_url": "http://sr-171-25-232-164.ipeye.ru/api/v1/stream/9522df9e8c6941a685cffe5c9aaa53fd/hls/index.m3u8"
   },
   {
-    "id_user": "56652",
-    "devcode": "addbc9b8242d493b9339d7d78eb5459f",
-    "name": "Камера1",
-    "stream_url": "http://sr-171-25-233-88.ipeye.ru/api/v1/stream/addbc9b8242d493b9339d7d78eb5459f/hls/index.m3u8"
-  },
-  {
     "id_user": "76745",
     "devcode": "1ba02db94d114fe49f29f2f6e2bfbd30",
     "name": "Камера1",
@@ -1069,15 +925,9 @@
   },
   {
     "id_user": "9865",
-    "devcode": "fdcd440a94694b8a8351984aae8344a8",
-    "name": "Киров Жуковского 7 (КБ408)",
-    "stream_url": "http://sr-171-25-232-232.ipeye.ru/api/v1/stream/fdcd440a94694b8a8351984aae8344a8/hls/index.m3u8"
-  },
-  {
-    "id_user": "74939",
-    "devcode": "0bfbdc1cac3b437587ed1d5032c8bdac",
-    "name": "Поворотка",
-    "stream_url": "http://sr-171-25-233-80.ipeye.ru/api/v1/stream/0bfbdc1cac3b437587ed1d5032c8bdac/hls/index.m3u8"
+    "devcode": "a00930bf28c248c6a0db6af3b8785b73",
+    "name": "Киров Невского 10 (КБ403)",
+    "stream_url": "http://sr-171-25-232-152.ipeye.ru/api/v1/stream/a00930bf28c248c6a0db6af3b8785b73/hls/index.m3u8"
   },
   {
     "id_user": "117207",
@@ -1106,14 +956,8 @@
   {
     "id_user": "104320",
     "devcode": "d76ccef910464bd0b0a9217a79f22b55",
-    "name": "Ozon_123 Рабочий стол",
+    "name": "СЫКТЫВКАР_123_клиентская_зона",
     "stream_url": "http://sr-171-25-232-184.ipeye.ru/api/v1/stream/d76ccef910464bd0b0a9217a79f22b55/hls/index.m3u8"
-  },
-  {
-    "id_user": "102474",
-    "devcode": "ee67dfa740064cfa8fbf32142564fbe1",
-    "name": "винокурова главн холл",
-    "stream_url": "http://sr-171-25-233-83.ipeye.ru/api/v1/stream/ee67dfa740064cfa8fbf32142564fbe1/hls/index.m3u8"
   },
   {
     "id_user": "3656",
@@ -1126,6 +970,12 @@
     "devcode": "5fd4181f6c4e4aad88ddae62851c6684",
     "name": "Гараж_1",
     "stream_url": "http://sr-171-25-232-179.ipeye.ru/api/v1/stream/5fd4181f6c4e4aad88ddae62851c6684/hls/index.m3u8"
+  },
+  {
+    "id_user": "75997",
+    "devcode": "380040f312ce4f9e96e5e36cbe5b5780",
+    "name": "Парковка",
+    "stream_url": "http://sr-171-25-232-174.ipeye.ru/api/v1/stream/380040f312ce4f9e96e5e36cbe5b5780/hls/index.m3u8"
   },
   {
     "id_user": "75997",
@@ -1170,24 +1020,6 @@
     "stream_url": "http://sr-171-25-232-45.ipeye.ru/api/v1/stream/7189650b40984d0cb90862ac4b7217cc/hls/index.m3u8"
   },
   {
-    "id_user": "116147",
-    "devcode": "871cd4a8c64e4ba7982ef0b90e9a8434",
-    "name": "Cam1 - Железнодорожная 8",
-    "stream_url": "http://sr-171-25-233-73.ipeye.ru/api/v1/stream/871cd4a8c64e4ba7982ef0b90e9a8434/hls/index.m3u8"
-  },
-  {
-    "id_user": "116147",
-    "devcode": "a70605f1729944c4a53c4d16fa4f1f03",
-    "name": "Cam2 - Железнодорожная 8",
-    "stream_url": "http://sr-171-25-232-143.ipeye.ru/api/v1/stream/a70605f1729944c4a53c4d16fa4f1f03/hls/index.m3u8"
-  },
-  {
-    "id_user": "102277",
-    "devcode": "4c257b67d6bb498394c45e881862a3d3",
-    "name": "Танцплощадка",
-    "stream_url": "http://sr-171-25-232-14.ipeye.ru/api/v1/stream/4c257b67d6bb498394c45e881862a3d3/hls/index.m3u8"
-  },
-  {
     "id_user": "79854",
     "devcode": "cb5df2d5ef2a4de6a70aa17824225442",
     "name": "Viktor",
@@ -1224,18 +1056,6 @@
     "stream_url": "http://sr-171-25-233-94.ipeye.ru/api/v1/stream/a7e2729a77814d1d950d9bff19fac054/hls/index.m3u8"
   },
   {
-    "id_user": "116147",
-    "devcode": "744daf3fffba40478c68e3eae9ff8390",
-    "name": "Cam3 - Железнодорожная 8",
-    "stream_url": "http://sr-171-25-233-71.ipeye.ru/api/v1/stream/744daf3fffba40478c68e3eae9ff8390/hls/index.m3u8"
-  },
-  {
-    "id_user": "127657",
-    "devcode": "66fcecba86f1491b9e22598db157df99",
-    "name": "Камера 3",
-    "stream_url": "http://sr-171-25-232-59.ipeye.ru/api/v1/stream/66fcecba86f1491b9e22598db157df99/hls/index.m3u8"
-  },
-  {
     "id_user": "97803",
     "devcode": "8432be6e603e4077962bcc05e2785c27",
     "name": "Л.Комсомола, поз.19",
@@ -1248,27 +1068,9 @@
     "stream_url": "http://sr-171-25-232-239.ipeye.ru/api/v1/stream/0966e28ff2854a6db5a5143690f477b5/hls/index.m3u8"
   },
   {
-    "id_user": "97079",
-    "devcode": "b431b08c7f3e4bad9c9f274063c5c8da",
-    "name": "Патрушева_000_Зона выдачи",
-    "stream_url": "http://sr-171-25-232-11.ipeye.ru/api/v1/stream/b431b08c7f3e4bad9c9f274063c5c8da/hls/index.m3u8"
-  },
-  {
-    "id_user": "97079",
-    "devcode": "c21403eaa7be454682b2a2f039a397f7",
-    "name": "Патрушева_000_Клиентская зона",
-    "stream_url": "http://sr-171-25-233-107.ipeye.ru/api/v1/stream/c21403eaa7be454682b2a2f039a397f7/hls/index.m3u8"
-  },
-  {
-    "id_user": "97079",
-    "devcode": "4e6c90ffcc9742dbbc0c4a2319bbc2c2",
-    "name": "Патрушева_000_Склад",
-    "stream_url": "http://sr-171-25-233-108.ipeye.ru/api/v1/stream/4e6c90ffcc9742dbbc0c4a2319bbc2c2/hls/index.m3u8"
-  },
-  {
     "id_user": "125981",
     "devcode": "c6889cfbbd99455888a9bb30fdb4401e",
-    "name": "Камера5oz",
+    "name": "Чехов_78_К",
     "stream_url": "http://sr-171-25-233-72.ipeye.ru/api/v1/stream/c6889cfbbd99455888a9bb30fdb4401e/hls/index.m3u8"
   },
   {
@@ -1308,7 +1110,7 @@
     "stream_url": "http://sr-171-25-232-167.ipeye.ru/api/v1/stream/e74c350a35424a4aa7cb0d3a8103abed/hls/index.m3u8"
   },
   {
-    "id_user": "3",
+    "id_user": "13686",
     "devcode": "ca1e6a54225447fc8f0814b3f7fbe2bd",
     "name": "Камера65",
     "stream_url": "http://sr-171-25-233-93.ipeye.ru/api/v1/stream/ca1e6a54225447fc8f0814b3f7fbe2bd/hls/index.m3u8"
@@ -1328,7 +1130,7 @@
   {
     "id_user": "136805",
     "devcode": "6fc2f45578cc4fe2b7bc3b7ef579182b",
-    "name": "ipbox_camera_12962",
+    "name": "клиентская зона",
     "stream_url": "http://sr-171-25-233-113.ipeye.ru/api/v1/stream/6fc2f45578cc4fe2b7bc3b7ef579182b/hls/index.m3u8"
   },
   {
@@ -1339,15 +1141,27 @@
   },
   {
     "id_user": "137597",
-    "devcode": "b92eeeb96ae14aa29e54fdcec1a47e1e",
-    "name": "Камера 10",
-    "stream_url": "http://sr-171-25-233-112.ipeye.ru/api/v1/stream/b92eeeb96ae14aa29e54fdcec1a47e1e/hls/index.m3u8"
+    "devcode": "cb636c7bd15e496babced6649bb53e09",
+    "name": "Камера 03",
+    "stream_url": "http://sr-171-25-233-112.ipeye.ru/api/v1/stream/cb636c7bd15e496babced6649bb53e09/hls/index.m3u8"
   },
   {
     "id_user": "137597",
     "devcode": "ba21553ed53b44f28694e8dc8d03e598",
     "name": "Камера 11",
     "stream_url": "http://sr-171-25-234-53.ipeye.ru/api/v1/stream/ba21553ed53b44f28694e8dc8d03e598/hls/index.m3u8"
+  },
+  {
+    "id_user": "137597",
+    "devcode": "ded4e01af34144849472ba5483b2ba76",
+    "name": "Камера 12",
+    "stream_url": "http://sr-171-25-233-112.ipeye.ru/api/v1/stream/ded4e01af34144849472ba5483b2ba76/hls/index.m3u8"
+  },
+  {
+    "id_user": "137597",
+    "devcode": "5a4c4526fe3a45e3b6bd79158d3d32ab",
+    "name": "Камера 13",
+    "stream_url": "http://sr-171-25-234-48.ipeye.ru/api/v1/stream/5a4c4526fe3a45e3b6bd79158d3d32ab/hls/index.m3u8"
   },
   {
     "id_user": "137597",
@@ -1386,21 +1200,51 @@
     "stream_url": "http://sr-171-25-234-44.ipeye.ru/api/v1/stream/7b1e2998c3d347bd911fcdce1ff29515/hls/index.m3u8"
   },
   {
+    "id_user": "78992",
+    "devcode": "02174584ff5d490ba36c1493be24d0e6",
+    "name": "1. Главный вход",
+    "stream_url": "http://sr-171-25-232-4.ipeye.ru/api/v1/stream/02174584ff5d490ba36c1493be24d0e6/hls/index.m3u8"
+  },
+  {
+    "id_user": "136790",
+    "devcode": "ec67bfbb73d844d4a6c952225b617eb2",
+    "name": "ВЛАДИВОСТОК_431_К2",
+    "stream_url": "http://sr-171-25-233-114.ipeye.ru/api/v1/stream/ec67bfbb73d844d4a6c952225b617eb2/hls/index.m3u8"
+  },
+  {
     "id_user": "106996",
     "devcode": "3278b6c0f7584e61834c9fd9ec17a795",
     "name": "Камера1",
     "stream_url": "http://sr-171-25-232-13.ipeye.ru/api/v1/stream/3278b6c0f7584e61834c9fd9ec17a795/hls/index.m3u8"
   },
   {
-    "id_user": "138635",
+    "id_user": "106996",
+    "devcode": "243eafa8f63049408a996398bec79228",
+    "name": "Камера5",
+    "stream_url": "http://sr-171-25-233-67.ipeye.ru/api/v1/stream/243eafa8f63049408a996398bec79228/hls/index.m3u8"
+  },
+  {
+    "id_user": "140676",
+    "devcode": "1088b95487104bba94bc31511d3c997d",
+    "name": "Детская площадка",
+    "stream_url": "http://sr-171-25-234-58.ipeye.ru/api/v1/stream/1088b95487104bba94bc31511d3c997d/hls/index.m3u8"
+  },
+  {
+    "id_user": "140676",
+    "devcode": "1acaab5d4dbc453d9c884ec6f56d03d3",
+    "name": "Парковка",
+    "stream_url": "http://sr-171-25-234-59.ipeye.ru/api/v1/stream/1acaab5d4dbc453d9c884ec6f56d03d3/hls/index.m3u8"
+  },
+  {
+    "id_user": "142223",
     "devcode": "61d022da3e854c1f8873ec639c0ed0c8",
-    "name": "Клиентская зона",
+    "name": "WB_ ID 304744_Клиентская зона выдачи и проверки заказов",
     "stream_url": "http://sr-171-25-232-199.ipeye.ru/api/v1/stream/61d022da3e854c1f8873ec639c0ed0c8/hls/index.m3u8"
   },
   {
-    "id_user": "138635",
+    "id_user": "142223",
     "devcode": "4f5a144575c1434eb58a97cfae2ded8c",
-    "name": "Монитор",
+    "name": "WB_ ID 304744_Обзорная",
     "stream_url": "http://sr-171-25-232-199.ipeye.ru/api/v1/stream/4f5a144575c1434eb58a97cfae2ded8c/hls/index.m3u8"
   },
   {
@@ -1410,9 +1254,435 @@
     "stream_url": "http://sr-171-25-232-143.ipeye.ru/api/v1/stream/ca5ef94e619643c1bd3de162802a8a5f/hls/index.m3u8"
   },
   {
+    "id_user": "141481",
+    "devcode": "b40f475bb19b4a6f915bb8c65d0ccca3",
+    "name": "1",
+    "stream_url": "http://sr-171-25-232-200.ipeye.ru/api/v1/stream/b40f475bb19b4a6f915bb8c65d0ccca3/hls/index.m3u8"
+  },
+  {
     "id_user": "141748",
     "devcode": "c8820142d9f14b72a442946fba96e15b",
     "name": "Пункт выдачи р.п.Жадовка Гагарина 7",
     "stream_url": "http://sr-171-25-234-62.ipeye.ru/api/v1/stream/c8820142d9f14b72a442946fba96e15b/hls/index.m3u8"
+  },
+  {
+    "id_user": "84898",
+    "devcode": "15644d602fbf4f19b164d24eb39abe7c",
+    "name": "Клиентская Зона , Рабочий Стол Сотру",
+    "stream_url": "http://sr-171-25-232-12.ipeye.ru/api/v1/stream/15644d602fbf4f19b164d24eb39abe7c/hls/index.m3u8"
+  },
+  {
+    "id_user": "131917",
+    "devcode": "b6464b3edfa740e3adf9d4454e8475a5",
+    "name": "cloud_151886",
+    "stream_url": "http://sr-171-25-232-207.ipeye.ru/api/v1/stream/b6464b3edfa740e3adf9d4454e8475a5/hls/index.m3u8"
+  },
+  {
+    "id_user": "142236",
+    "devcode": "b1b241895e8c4aeaa8b7d2f2ff1a7d01",
+    "name": "Камера4",
+    "stream_url": "http://sr-171-25-234-62.ipeye.ru/api/v1/stream/b1b241895e8c4aeaa8b7d2f2ff1a7d01/hls/index.m3u8"
+  },
+  {
+    "id_user": "142236",
+    "devcode": "6970fe5acc9e4557a1d460b364cfc58e",
+    "name": "Камера3",
+    "stream_url": "http://sr-171-25-234-62.ipeye.ru/api/v1/stream/6970fe5acc9e4557a1d460b364cfc58e/hls/index.m3u8"
+  },
+  {
+    "id_user": "143470",
+    "devcode": "0af337645d2c4ff7891d89258bf1ecc7",
+    "name": "НОВОСИБИРСК_1286_склад",
+    "stream_url": "http://sr-171-25-234-61.ipeye.ru/api/v1/stream/0af337645d2c4ff7891d89258bf1ecc7/hls/index.m3u8"
+  },
+  {
+    "id_user": "65398",
+    "devcode": "783b5ac9aa2d4a4e8e6e32b3b82f71fe",
+    "name": "cloud_40559",
+    "stream_url": "http://sr-171-25-235-103.ipeye.ru/api/v1/stream/783b5ac9aa2d4a4e8e6e32b3b82f71fe/hls/index.m3u8"
+  },
+  {
+    "id_user": "142236",
+    "devcode": "2da4d46af4904a53ae3c69521d27daa7",
+    "name": "Камера2",
+    "stream_url": "http://sr-171-25-234-62.ipeye.ru/api/v1/stream/2da4d46af4904a53ae3c69521d27daa7/hls/index.m3u8"
+  },
+  {
+    "id_user": "144650",
+    "devcode": "f5456a4d34984269a356161da28e3306",
+    "name": "Орджоникидзе 14-П1",
+    "stream_url": "http://sr-171-25-232-216.ipeye.ru/api/v1/stream/f5456a4d34984269a356161da28e3306/hls/index.m3u8"
+  },
+  {
+    "id_user": "126683",
+    "devcode": "509bea933bd84fd89a0ce78e6fd32718",
+    "name": "Клиентская Льва Толстого",
+    "stream_url": "http://sr-171-25-235-118.ipeye.ru/api/v1/stream/509bea933bd84fd89a0ce78e6fd32718/hls/index.m3u8"
+  },
+  {
+    "id_user": "100959",
+    "devcode": "133ebda841a34b918d1d5eaca622c8fb",
+    "name": "Стройка",
+    "stream_url": "http://sr-171-25-235-109.ipeye.ru/api/v1/stream/133ebda841a34b918d1d5eaca622c8fb/hls/index.m3u8"
+  },
+  {
+    "id_user": "139342",
+    "devcode": "b148b97901a145c8b261ad420388faa1",
+    "name": "Троицк_54 Клиентская зона",
+    "stream_url": "http://sr-171-25-233-116.ipeye.ru/api/v1/stream/b148b97901a145c8b261ad420388faa1/hls/index.m3u8"
+  },
+  {
+    "id_user": "135000",
+    "devcode": "91c663f129e942e0bdb012fe1f9d4aed",
+    "name": "ЖЕРНОВЕЦ_3_С",
+    "stream_url": "http://sr-171-25-232-194.ipeye.ru/api/v1/stream/91c663f129e942e0bdb012fe1f9d4aed/hls/index.m3u8"
+  },
+  {
+    "id_user": "146666",
+    "devcode": "1019b4b47d9849bd99481eba87a06e24",
+    "name": "Dom",
+    "stream_url": "http://sr-171-25-232-220.ipeye.ru/api/v1/stream/1019b4b47d9849bd99481eba87a06e24/hls/index.m3u8"
+  },
+  {
+    "id_user": "68958",
+    "devcode": "72f3e0c0f9ba4537b421170cbad9e414",
+    "name": "Свердлова 39",
+    "stream_url": "http://sr-171-25-232-222.ipeye.ru/api/v1/stream/72f3e0c0f9ba4537b421170cbad9e414/hls/index.m3u8"
+  },
+  {
+    "id_user": "102449",
+    "devcode": "7d0ef09a80dd44aea8a44a11dfbe9281",
+    "name": "cloud_41202",
+    "stream_url": "http://sr-171-25-232-43.ipeye.ru/api/v1/stream/7d0ef09a80dd44aea8a44a11dfbe9281/hls/index.m3u8"
+  },
+  {
+    "id_user": "68047",
+    "devcode": "e9b7f17782d64cc193b67c27cbfc1adc",
+    "name": "Центр 1",
+    "stream_url": "http://sr-171-25-232-54.ipeye.ru/api/v1/stream/e9b7f17782d64cc193b67c27cbfc1adc/hls/index.m3u8"
+  },
+  {
+    "id_user": "141117",
+    "devcode": "87a3f9bc57a14946878efaf5bf0c35fe",
+    "name": "Клиентская зона ОЗОН",
+    "stream_url": "http://sr-171-25-232-135.ipeye.ru/api/v1/stream/87a3f9bc57a14946878efaf5bf0c35fe/hls/index.m3u8"
+  },
+  {
+    "id_user": "141117",
+    "devcode": "884e8e6cb050454cbb249fa52d8351fc",
+    "name": "Склад ОЗОН",
+    "stream_url": "http://sr-171-25-232-139.ipeye.ru/api/v1/stream/884e8e6cb050454cbb249fa52d8351fc/hls/index.m3u8"
+  },
+  {
+    "id_user": "107365",
+    "devcode": "b9c503fbc4364b8ba9725af5c82be48c",
+    "name": "Глазов Экстрим Парк",
+    "stream_url": "http://sr-171-25-232-7.ipeye.ru/api/v1/stream/b9c503fbc4364b8ba9725af5c82be48c/hls/index.m3u8"
+  },
+  {
+    "id_user": "150944",
+    "devcode": "35745d0636394f4795378447c8d3d786",
+    "name": "Нальчик_164_С",
+    "stream_url": "http://sr-171-25-235-123.ipeye.ru/api/v1/stream/35745d0636394f4795378447c8d3d786/hls/index.m3u8"
+  },
+  {
+    "id_user": "150944",
+    "devcode": "0ce85871c8fe4cdd90c60205b79db6a7",
+    "name": "Нальчик_164_К",
+    "stream_url": "http://sr-171-25-235-196.ipeye.ru/api/v1/stream/0ce85871c8fe4cdd90c60205b79db6a7/hls/index.m3u8"
+  },
+  {
+    "id_user": "23999",
+    "devcode": "ef102521b6fa476dad96cd89db9e859c",
+    "name": "Панорама Ежи (ipeye-box)",
+    "stream_url": "http://sr-171-25-233-92.ipeye.ru/api/v1/stream/ef102521b6fa476dad96cd89db9e859c/hls/index.m3u8"
+  },
+  {
+    "id_user": "144152",
+    "devcode": "167c9b37e65d4767a0a27b4cc9dc85a4",
+    "name": "ОМСК_675_С",
+    "stream_url": "http://sr-171-25-232-221.ipeye.ru/api/v1/stream/167c9b37e65d4767a0a27b4cc9dc85a4/hls/index.m3u8"
+  },
+  {
+    "id_user": "151925",
+    "devcode": "74b91d32832b45cd96c8d3aa81849813",
+    "name": "ЖК \u0026quot;Геометрия\u0026quot;",
+    "stream_url": "http://sr-171-25-235-168.ipeye.ru/api/v1/stream/74b91d32832b45cd96c8d3aa81849813/hls/index.m3u8"
+  },
+  {
+    "id_user": "131723",
+    "devcode": "15363cb11c4c4776acae8de097a09f73",
+    "name": "WB_153719  Клиентская зона 1",
+    "stream_url": "http://sr-171-25-232-248.ipeye.ru/api/v1/stream/15363cb11c4c4776acae8de097a09f73/hls/index.m3u8"
+  },
+  {
+    "id_user": "118780",
+    "devcode": "c058e61d703044e88071da57542628f2",
+    "name": "Клиентская",
+    "stream_url": "http://sr-171-25-232-22.ipeye.ru/api/v1/stream/c058e61d703044e88071da57542628f2/hls/index.m3u8"
+  },
+  {
+    "id_user": "152896",
+    "devcode": "a3617d2b06584f52bbf548d75fd56cdc",
+    "name": "СИМФЕРОПОЛЬ_208_клиентская_зона",
+    "stream_url": "http://sr-171-25-232-173.ipeye.ru/api/v1/stream/a3617d2b06584f52bbf548d75fd56cdc/hls/index.m3u8"
+  },
+  {
+    "id_user": "152896",
+    "devcode": "125a530c79e24d12943b84fa8ddd510a",
+    "name": "СИМФЕРОПОЛЬ_208_Зона_примерки",
+    "stream_url": "http://sr-171-25-235-124.ipeye.ru/api/v1/stream/125a530c79e24d12943b84fa8ddd510a/hls/index.m3u8"
+  },
+  {
+    "id_user": "152896",
+    "devcode": "f3a0ab35935842c1b9774aac9a105cd0",
+    "name": "СИМФЕРОПОЛЬ_208_склад",
+    "stream_url": "http://sr-171-25-232-176.ipeye.ru/api/v1/stream/f3a0ab35935842c1b9774aac9a105cd0/hls/index.m3u8"
+  },
+  {
+    "id_user": "154130",
+    "devcode": "4203d10568da40b7bfbf5610283b4d03",
+    "name": "ЗНАМЕНСКОЕ_14_С",
+    "stream_url": "http://sr-171-25-232-187.ipeye.ru/api/v1/stream/4203d10568da40b7bfbf5610283b4d03/hls/index.m3u8"
+  },
+  {
+    "id_user": "81443",
+    "devcode": "660668ba95684133ae2c37d98bc9183d",
+    "name": "7-Imperator Зал-2-Самбо",
+    "stream_url": "http://sr-171-25-232-211.ipeye.ru/api/v1/stream/660668ba95684133ae2c37d98bc9183d/hls/index.m3u8"
+  },
+  {
+    "id_user": "81443",
+    "devcode": "cd236e36220b44f8bea5c91ddd046be5",
+    "name": "7-Imperator Зал-1-Дзюдо",
+    "stream_url": "http://sr-171-25-232-211.ipeye.ru/api/v1/stream/cd236e36220b44f8bea5c91ddd046be5/hls/index.m3u8"
+  },
+  {
+    "id_user": "152685",
+    "devcode": "738f3579d3e346fba8f8b3a8d4ec939c",
+    "name": "Ison",
+    "stream_url": "http://sr-171-25-235-124.ipeye.ru/api/v1/stream/738f3579d3e346fba8f8b3a8d4ec939c/hls/index.m3u8"
+  },
+  {
+    "id_user": "81443",
+    "devcode": "52d1f2ba145147dca89af64176a7e53e",
+    "name": "УЛЬЯНОВСК_29_К",
+    "stream_url": "http://sr-171-25-232-186.ipeye.ru/api/v1/stream/52d1f2ba145147dca89af64176a7e53e/hls/index.m3u8"
+  },
+  {
+    "id_user": "134805",
+    "devcode": "1781ff0803c746faa1d7a5776924a858",
+    "name": "DesktopShare_278205",
+    "stream_url": "http://sr-171-25-234-56.ipeye.ru/api/v1/stream/1781ff0803c746faa1d7a5776924a858/hls/index.m3u8"
+  },
+  {
+    "id_user": "155279",
+    "devcode": "f73a776d7a3f42b793eeb9fd16de464e",
+    "name": "cloud_2669",
+    "stream_url": "http://sr-171-25-232-232.ipeye.ru/api/v1/stream/f73a776d7a3f42b793eeb9fd16de464e/hls/index.m3u8"
+  },
+  {
+    "id_user": "147295",
+    "devcode": "6b488fe6c1654517aea6d53847484858",
+    "name": "МОСКВА_8271_К",
+    "stream_url": "http://sr-171-25-232-211.ipeye.ru/api/v1/stream/6b488fe6c1654517aea6d53847484858/hls/index.m3u8"
+  },
+  {
+    "id_user": "140676",
+    "devcode": "28e06834560e4357aa37adedbf4a2843",
+    "name": "Детская площадка",
+    "stream_url": "http://sr-171-25-235-172.ipeye.ru/api/v1/stream/28e06834560e4357aa37adedbf4a2843/hls/index.m3u8"
+  },
+  {
+    "id_user": "140676",
+    "devcode": "3612528e14c046b1a1b2b7e2af87e749",
+    "name": "Корт",
+    "stream_url": "http://sr-171-25-235-172.ipeye.ru/api/v1/stream/3612528e14c046b1a1b2b7e2af87e749/hls/index.m3u8"
+  },
+  {
+    "id_user": "6185",
+    "devcode": "733b6a0031234df7b57b096bf5ac28bd",
+    "name": "Мытищи, Вокзальная с1 - Кухня",
+    "stream_url": "http://sr-171-25-232-161.ipeye.ru/api/v1/stream/733b6a0031234df7b57b096bf5ac28bd/hls/index.m3u8"
+  },
+  {
+    "id_user": "158054",
+    "devcode": "cabff7a4fe534aa084018bdb52565713",
+    "name": "Перекрёсток — ул. Чистяковой, 24 — ВЛ-Телеком",
+    "stream_url": "http://sr-171-25-235-181.ipeye.ru/api/v1/stream/cabff7a4fe534aa084018bdb52565713/hls/index.m3u8"
+  },
+  {
+    "id_user": "136841",
+    "devcode": "0773b4dcb88440458c5b7359ad76af3f",
+    "name": "Минск Кропоткина 110_Зал",
+    "stream_url": "http://sr-171-25-234-41.ipeye.ru/api/v1/stream/0773b4dcb88440458c5b7359ad76af3f/hls/index.m3u8"
+  },
+  {
+    "id_user": "141498",
+    "devcode": "26e5f741cad4486a89076fa6b85e79f3",
+    "name": "Серменево",
+    "stream_url": "http://sr-171-25-235-123.ipeye.ru/api/v1/stream/26e5f741cad4486a89076fa6b85e79f3/hls/index.m3u8"
+  },
+  {
+    "id_user": "140676",
+    "devcode": "9235517cf45b47eaafea842833394d8e",
+    "name": "Въезд во Двор",
+    "stream_url": "http://sr-171-25-235-184.ipeye.ru/api/v1/stream/9235517cf45b47eaafea842833394d8e/hls/index.m3u8"
+  },
+  {
+    "id_user": "158681",
+    "devcode": "091b5d6aaab1411f9d0c8cb70b5ab80f",
+    "name": "Зал",
+    "stream_url": "http://sr-171-25-235-200.ipeye.ru/api/v1/stream/091b5d6aaab1411f9d0c8cb70b5ab80f/hls/index.m3u8"
+  },
+  {
+    "id_user": "150285",
+    "devcode": "579efaeadfc24a04af692fc5985505ae",
+    "name": "Клиентская зона",
+    "stream_url": "http://sr-171-25-234-48.ipeye.ru/api/v1/stream/579efaeadfc24a04af692fc5985505ae/hls/index.m3u8"
+  },
+  {
+    "id_user": "159724",
+    "devcode": "ecb08bbc8a83460885cd2a78c62faff8",
+    "name": "АРХАНГЕЛЬСК_252_С",
+    "stream_url": "http://sr-171-25-235-245.ipeye.ru/api/v1/stream/ecb08bbc8a83460885cd2a78c62faff8/hls/index.m3u8"
+  },
+  {
+    "id_user": "159724",
+    "devcode": "58f384c5f57c415282bddf9a29abdc1d",
+    "name": "АРХАНГЕЛЬСК_252_К",
+    "stream_url": "http://sr-171-25-235-204.ipeye.ru/api/v1/stream/58f384c5f57c415282bddf9a29abdc1d/hls/index.m3u8"
+  },
+  {
+    "id_user": "159123",
+    "devcode": "e0ba203f9a7c41e9b68c4b638235fd67",
+    "name": "cloud_152453",
+    "stream_url": "http://sr-171-25-235-185.ipeye.ru/api/v1/stream/e0ba203f9a7c41e9b68c4b638235fd67/hls/index.m3u8"
+  },
+  {
+    "id_user": "162425",
+    "devcode": "99560bf291c94c5da827bf99968aa007",
+    "name": "Камера_угловая",
+    "stream_url": "http://sr-171-25-235-203.ipeye.ru/api/v1/stream/99560bf291c94c5da827bf99968aa007/hls/index.m3u8"
+  },
+  {
+    "id_user": "108323",
+    "devcode": "39c6d1c0ea6e47a4916c079f5a85b533",
+    "name": "НОВОСИБИРСК_1332_склад2",
+    "stream_url": "http://sr-171-25-232-7.ipeye.ru/api/v1/stream/39c6d1c0ea6e47a4916c079f5a85b533/hls/index.m3u8"
+  },
+  {
+    "id_user": "161723",
+    "devcode": "d480b90e5239436285faa47365bc1769",
+    "name": "WB_Москва, ул. Радужная, 6к2-Клиентская зона",
+    "stream_url": "http://sr-171-25-235-195.ipeye.ru/api/v1/stream/d480b90e5239436285faa47365bc1769/hls/index.m3u8"
+  },
+  {
+    "id_user": "161723",
+    "devcode": "e16caee257c44276bb5500d4febd4f14",
+    "name": "WB_Москва, ул. Радужная, 6к2-Склад",
+    "stream_url": "http://sr-171-25-235-194.ipeye.ru/api/v1/stream/e16caee257c44276bb5500d4febd4f14/hls/index.m3u8"
+  },
+  {
+    "id_user": "162967",
+    "devcode": "18b628e767f44660902e69f0649cc5b5",
+    "name": "WB 50009232 Менеджер",
+    "stream_url": "http://sr-171-25-233-84.ipeye.ru/api/v1/stream/18b628e767f44660902e69f0649cc5b5/hls/index.m3u8"
+  },
+  {
+    "id_user": "162967",
+    "devcode": "05ef2e938b8344f3aa7016a51b3ef803",
+    "name": "WB 50009232 Клиент",
+    "stream_url": "http://sr-171-25-233-78.ipeye.ru/api/v1/stream/05ef2e938b8344f3aa7016a51b3ef803/hls/index.m3u8"
+  },
+  {
+    "id_user": "162967",
+    "devcode": "9aabc334c198442892d35a2d9a20dc3b",
+    "name": "WB 50009232 Склад",
+    "stream_url": "http://sr-171-25-233-71.ipeye.ru/api/v1/stream/9aabc334c198442892d35a2d9a20dc3b/hls/index.m3u8"
+  },
+  {
+    "id_user": "116466",
+    "devcode": "3e70ba0f38d043d38fad4999f1cecf38",
+    "name": "Зал_Лебеди_Октябрьская_12",
+    "stream_url": "http://sr-171-25-232-164.ipeye.ru/api/v1/stream/3e70ba0f38d043d38fad4999f1cecf38/hls/index.m3u8"
+  },
+  {
+    "id_user": "162662",
+    "devcode": "f8071bef034840009b6c4bb53ab68d5e",
+    "name": "Пункт выдачи с.Старосултангулово ул.Центральная 36А",
+    "stream_url": "http://sr-171-25-235-212.ipeye.ru/api/v1/stream/f8071bef034840009b6c4bb53ab68d5e/hls/index.m3u8"
+  },
+  {
+    "id_user": "140676",
+    "devcode": "75b8c634166b407db410ea3573fb59f9",
+    "name": "Парковка",
+    "stream_url": "http://sr-171-25-235-220.ipeye.ru/api/v1/stream/75b8c634166b407db410ea3573fb59f9/hls/index.m3u8"
+  },
+  {
+    "id_user": "163671",
+    "devcode": "1c120d3a98e44a8eb7c08f142d386b94",
+    "name": "192.168.1.102",
+    "stream_url": "http://sr-171-25-234-110.ipeye.ru/api/v1/stream/1c120d3a98e44a8eb7c08f142d386b94/hls/index.m3u8"
+  },
+  {
+    "id_user": "54558",
+    "devcode": "cf54b3e0400d412cbf9a0715d78f7569",
+    "name": "Tolstogo street",
+    "stream_url": "http://sr-171-25-234-98.ipeye.ru/api/v1/stream/cf54b3e0400d412cbf9a0715d78f7569/hls/index.m3u8"
+  },
+  {
+    "id_user": "153751",
+    "devcode": "9e3ba70b842747ffa351207c447957ce",
+    "name": "СЫКТЫВКАР_31_K",
+    "stream_url": "http://sr-171-25-232-211.ipeye.ru/api/v1/stream/9e3ba70b842747ffa351207c447957ce/hls/index.m3u8"
+  },
+  {
+    "id_user": "127787",
+    "devcode": "09655550200c444e8a43b32c229a1cc6",
+    "name": "САБУРОВО_4_К",
+    "stream_url": "http://sr-171-25-235-153.ipeye.ru/api/v1/stream/09655550200c444e8a43b32c229a1cc6/hls/index.m3u8"
+  },
+  {
+    "id_user": "165403",
+    "devcode": "1d9e126e808f4c01ac08da8c70a70ae1",
+    "name": "ХВАСТОВИЧИ_4_К",
+    "stream_url": "http://sr-171-25-235-77.ipeye.ru/api/v1/stream/1d9e126e808f4c01ac08da8c70a70ae1/hls/index.m3u8"
+  },
+  {
+    "id_user": "170214",
+    "devcode": "8a7d684300984a30b129fea9d51f815b",
+    "name": "клиентская",
+    "stream_url": "http://sr-171-25-235-145.ipeye.ru/api/v1/stream/8a7d684300984a30b129fea9d51f815b/hls/index.m3u8"
+  },
+  {
+    "id_user": "82190",
+    "devcode": "6eb8749be6de4a5f8795e9d2f9e19213",
+    "name": "wb_zal_kalarasha",
+    "stream_url": "http://sr-171-25-234-62.ipeye.ru/api/v1/stream/6eb8749be6de4a5f8795e9d2f9e19213/hls/index.m3u8"
+  },
+  {
+    "id_user": "112178",
+    "devcode": "f5f7355fcd1648c0852cbfec79839067",
+    "name": "НИЖНИЙ_НОВГОРОД_1064",
+    "stream_url": "http://sr-171-25-235-151.ipeye.ru/api/v1/stream/f5f7355fcd1648c0852cbfec79839067/hls/index.m3u8"
+  },
+  {
+    "id_user": "170073",
+    "devcode": "827a46873a3844858be2b74be0030d0d",
+    "name": "Камера 1",
+    "stream_url": "http://sr-171-25-235-145.ipeye.ru/api/v1/stream/827a46873a3844858be2b74be0030d0d/hls/index.m3u8"
+  },
+  {
+    "id_user": "170073",
+    "devcode": "c66b59b73609491c94dc8b962d6e24da",
+    "name": "Камера 3",
+    "stream_url": "http://sr-171-25-235-146.ipeye.ru/api/v1/stream/c66b59b73609491c94dc8b962d6e24da/hls/index.m3u8"
+  },
+  {
+    "id_user": "171616",
+    "devcode": "c135f137eef241daa5dcabe6d01a13b2",
+    "name": "Свято-Николаевский кафедральный собор",
+    "stream_url": "http://sr-171-25-235-68.ipeye.ru/api/v1/stream/c135f137eef241daa5dcabe6d01a13b2/hls/index.m3u8"
   }
 ]

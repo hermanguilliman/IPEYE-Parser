@@ -4,6 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"io"
 	"log"
 	"net"
 	"net/http"
@@ -15,7 +16,6 @@ import (
 	"github.com/pkg/browser"
 )
 
-// Config — настройки приложения
 type Config struct {
 	AllDevicesURL   string
 	DeviceInfoURL   string
@@ -28,14 +28,13 @@ type Config struct {
 	UserAgent       string
 }
 
-// App — основное состояние
 type App struct {
 	config      *Config
 	deviceMgr   *DeviceManager
 	webServer   *WebServer
 	httpClient  *HTTPClient
 	fileStorage *FileStorage
-	// Кэш в памяти, чтобы не читать диск при каждом запросе
+
 	devicesCache []*Device
 	cacheMutex   sync.RWMutex
 }
@@ -46,7 +45,7 @@ func NewApp() *App {
 		DeviceInfoURL:   "https://ipeye.ru/webs/stream_info.php?devid=%s",
 		DeviceStreamURL: "http://%s/api/v1/stream/%s/hls/index.m3u8",
 		DataFile:        "./static/cameras.json",
-		Workers:         50, // Увеличено для ускорения парсинга
+		Workers:         50,
 		RequestTimeout:  15 * time.Second,
 		Retries:         3,
 		WebServerPort:   ":8080",
@@ -62,14 +61,13 @@ func NewApp() *App {
 	}
 }
 
-// HTTPClient с оптимизированным транспортом
 type HTTPClient struct {
 	client *http.Client
 	cfg    *Config
 }
 
 func NewHTTPClient(cfg *Config) *HTTPClient {
-	// Настройка транспорта для переиспользования TCP соединений
+
 	transport := &http.Transport{
 		Proxy: http.ProxyFromEnvironment,
 		DialContext: (&net.Dialer{
@@ -77,8 +75,8 @@ func NewHTTPClient(cfg *Config) *HTTPClient {
 			KeepAlive: 30 * time.Second,
 		}).DialContext,
 		ForceAttemptHTTP2:     true,
-		MaxIdleConns:          100, // Увеличено
-		MaxIdleConnsPerHost:   100, // Увеличено (критично для запросов к одному API)
+		MaxIdleConns:          100,
+		MaxIdleConnsPerHost:   100,
 		IdleConnTimeout:       90 * time.Second,
 		TLSHandshakeTimeout:   10 * time.Second,
 		ExpectContinueTimeout: 1 * time.Second,
@@ -97,11 +95,11 @@ type DeviceManager struct {
 	config     *Config
 	httpClient *HTTPClient
 	storage    *FileStorage
-	app        *App // Ссылка на App для обновления кэша
+	app        *App
 }
 
 func NewDeviceManager(cfg *Config) *DeviceManager {
-	return &DeviceManager{config: cfg} // зависимости инжектим позже
+	return &DeviceManager{config: cfg}
 }
 
 type WebServer struct {
@@ -141,7 +139,6 @@ func main() {
 	app := NewApp()
 	app.InitDependencies()
 
-	// Предзагрузка кэша при старте
 	if err := app.LoadCache(); err != nil {
 		log.Printf("Предупреждение: кэш не загружен (возможно, первый запуск): %v", err)
 	}
@@ -161,14 +158,13 @@ func main() {
 				log.Printf("Обновление завершено за %v", time.Since(start))
 			}
 		case "Просмотр камер":
-			// Запуск в горутине, чтобы меню не блокировалось (опционально)
-			// Но в текущей логике мы ждем ввода, так что блокирующий запуск ок.
+
 			go func() {
 				if err := app.webServer.Start(); err != nil && err != http.ErrServerClosed {
 					log.Printf("Ошибка сервера: %v", err)
 				}
 			}()
-			// Открываем браузер с небольшой задержкой, чтобы сервер успел стартовать
+
 			time.Sleep(500 * time.Millisecond)
 			_ = browser.OpenURL("http://localhost" + app.config.WebServerPort + "/index.html")
 
@@ -201,10 +197,12 @@ func (a *App) LoadCache() error {
 func (a *App) ShowMenu() (string, error) {
 	var result string
 	prompt := &survey.Select{
-		Message: "*** IPEYE камеры (Optimized) ***\n\nВыберите действие:",
+		Message: "*** IPEYE камеры ***\n\nВыберите действие:",
 		Options: []string{"Обновить камеры", "Просмотр камер", "Выйти"},
 	}
-	survey.AskOne(prompt, &result)
+	if err := survey.AskOne(prompt, &result); err != nil {
+		return "", fmt.Errorf("ошибка ввода: %w", err)
+	}
 	return result, nil
 }
 
@@ -214,13 +212,9 @@ func (a *App) waitForInput() {
 	a.webServer.Stop()
 }
 
-// --- DeviceManager ---
-
 func (m *DeviceManager) Update() error {
 	fmt.Println("Загрузка списка устройств...")
 
-	// Если файла нет или мы форсируем обновление, качаем базовый список
-	// Здесь логика упрощена: всегда сначала пытаемся обновить базовый список
 	if err := m.downloadAllDevices(); err != nil {
 		log.Printf("Не удалось скачать общий список, пробуем использовать локальный: %v", err)
 	}
@@ -237,7 +231,6 @@ func (m *DeviceManager) Update() error {
 		return fmt.Errorf("ошибка сохранения камер: %w", err)
 	}
 
-	// Обновляем кэш приложения
 	m.app.cacheMutex.Lock()
 	m.app.devicesCache = devices
 	m.app.cacheMutex.Unlock()
@@ -250,11 +243,9 @@ func (m *DeviceManager) processDevices(devices []*Device) {
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
 
-	// Используем буферизированный канал
 	ch := make(chan *Device, len(devices))
 	var wg sync.WaitGroup
 
-	// Лимитируем конкурентность через семафор или просто фиксированное кол-во воркеров
 	workers := m.config.Workers
 	wg.Add(workers)
 
@@ -275,36 +266,42 @@ func (m *DeviceManager) processDevices(devices []*Device) {
 }
 
 func (m *DeviceManager) processSingleDevice(ctx context.Context, device *Device) {
-	// Оптимизация: если URL уже есть и выглядит валидным, можно пропустить (опционально)
-	// Но лучше обновить, вдруг сервер сменился.
 
 	for attempt := 0; attempt < m.config.Retries; attempt++ {
 		server, err := m.getDeviceServer(ctx, device.Devcode)
 		if err == nil {
 			device.StreamURL = fmt.Sprintf(m.config.DeviceStreamURL, server, device.Devcode)
-			return // Успех
+			return
 		}
-		// Экспоненциальная задержка перед повтором (backoff)
+
 		select {
 		case <-ctx.Done():
 			return
 		case <-time.After(time.Duration(attempt+1) * 100 * time.Millisecond):
 		}
 	}
-	// Если не удалось получить сервер, StreamURL останется пустым или старым
+
 }
 
 func (m *DeviceManager) getDeviceServer(ctx context.Context, devcode string) (string, error) {
 	url := fmt.Sprintf(m.config.DeviceInfoURL, devcode)
-	req, _ := http.NewRequestWithContext(ctx, "GET", url, nil)
+	req, err := http.NewRequestWithContext(ctx, "GET", url, nil)
+	if err != nil {
+		return "", fmt.Errorf("create request: %w", err)
+	}
 	req.Header.Set("User-Agent", m.config.UserAgent)
 
-	// Используем кастомный Do клиента
 	resp, err := m.httpClient.client.Do(req)
 	if err != nil {
 		return "", err
 	}
-	defer resp.Body.Close()
+	defer func() {
+
+		_, _ = io.Copy(io.Discard, resp.Body)
+		if err := resp.Body.Close(); err != nil {
+			log.Printf("Ошибка закрытия тела ответа: %v", err)
+		}
+	}()
 
 	if resp.StatusCode != 200 {
 		return "", fmt.Errorf("status code %d", resp.StatusCode)
@@ -323,7 +320,10 @@ func (m *DeviceManager) getDeviceServer(ctx context.Context, devcode string) (st
 }
 
 func (m *DeviceManager) downloadAllDevices() error {
-	req, _ := http.NewRequest("GET", m.config.AllDevicesURL, nil)
+	req, err := http.NewRequest("GET", m.config.AllDevicesURL, nil)
+	if err != nil {
+		return fmt.Errorf("create request: %w", err)
+	}
 	req.Header.Set("User-Agent", m.config.UserAgent)
 	req.Header.Set("Accept", "application/json")
 
@@ -331,19 +331,20 @@ func (m *DeviceManager) downloadAllDevices() error {
 	if err != nil {
 		return fmt.Errorf("request error: %w", err)
 	}
-	defer resp.Body.Close()
+	defer func() {
+		_, _ = io.Copy(io.Discard, resp.Body)
+		if err := resp.Body.Close(); err != nil {
+			log.Printf("Ошибка закрытия тела ответа: %v", err)
+		}
+	}()
 
-	// Читаем сразу в структуру через декодер (меньше аллокаций, чем ReadAll + Unmarshal)
 	var devices []*Device
 	if err := json.NewDecoder(resp.Body).Decode(&devices); err != nil {
 		return fmt.Errorf("decode error: %w", err)
 	}
 
-	// Сохраняем "сырой" список
 	return m.storage.Save(devices)
 }
-
-// --- FileStorage ---
 
 func (s *FileStorage) Exists() bool {
 	info, err := os.Stat(s.filename)
@@ -356,16 +357,28 @@ func (s *FileStorage) Save(devices []*Device) error {
 	if err != nil {
 		return err
 	}
-	defer f.Close()
 
-	// Streaming encoder - эффективнее по памяти
+	success := false
+	defer func() {
+		if !success {
+			if cerr := f.Close(); cerr != nil {
+				log.Printf("Ошибка закрытия временного файла: %v", cerr)
+			}
+			_ = os.Remove(tmpFile)
+		}
+	}()
+
 	enc := json.NewEncoder(f)
 	enc.SetIndent("", "  ")
 	if err := enc.Encode(devices); err != nil {
 		return err
 	}
 
-	f.Close() // Явно закрываем перед Rename
+	if err := f.Close(); err != nil {
+		return fmt.Errorf("ошибка закрытия файла: %w", err)
+	}
+
+	success = true
 	return os.Rename(tmpFile, s.filename)
 }
 
@@ -374,7 +387,11 @@ func (s *FileStorage) Load() ([]*Device, error) {
 	if err != nil {
 		return nil, err
 	}
-	defer f.Close()
+	defer func() {
+		if err := f.Close(); err != nil {
+			log.Printf("Ошибка закрытия файла %s: %v", s.filename, err)
+		}
+	}()
 
 	var devices []*Device
 	if err := json.NewDecoder(f).Decode(&devices); err != nil {
@@ -383,19 +400,17 @@ func (s *FileStorage) Load() ([]*Device, error) {
 	return devices, nil
 }
 
-// --- WebServer ---
-
 func (s *WebServer) Start() error {
 	mux := http.NewServeMux()
 
 	mux.HandleFunc("/cameras", func(w http.ResponseWriter, r *http.Request) {
-		// Читаем из кэша памяти! Быстро.
+
 		s.app.cacheMutex.RLock()
 		devices := s.app.devicesCache
 		s.app.cacheMutex.RUnlock()
 
 		if devices == nil {
-			// Если кэш пуст, пробуем загрузить
+
 			var err error
 			devices, err = s.app.fileStorage.Load()
 			if err != nil {
@@ -405,11 +420,12 @@ func (s *WebServer) Start() error {
 		}
 
 		w.Header().Set("Content-Type", "application/json")
-		// Используем Encoder для отправки потока
-		json.NewEncoder(w).Encode(devices)
+
+		if err := json.NewEncoder(w).Encode(devices); err != nil {
+			log.Printf("Ошибка отправки JSON: %v", err)
+		}
 	})
 
-	// Кэширование статики браузером
 	fs := http.FileServer(http.Dir("./static"))
 	mux.Handle("/", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Cache-Control", "public, max-age=3600")
